@@ -1,0 +1,13 @@
+{
+  "name": "html-form-lab",
+  "version": "1.0.0",
+  "description": "HTML Form Lab with floating labels and task list",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "license": "ISC"
+}
