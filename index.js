@@ -13,18 +13,16 @@ inputs.forEach(input => {
   });
 });
 
-// Handle task submission and DOM update
+// Handle task submission
 const form = document.getElementById("create-task-form");
 const taskList = document.getElementById("task");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  // Get task description
   const task = {
-    description: form["new-task-description"].value,
-    email: form.email.value,
-    phone: form.phone.value,
-    message: form.message.value
+    description: form["new-task-description"].value
   };
 
   // Add task to list
@@ -32,7 +30,7 @@ form.addEventListener("submit", (e) => {
   li.textContent = task.description;
   taskList.appendChild(li);
 
-  // Reset form and remove focus
+  // Reset input and floating label
   form.reset();
   inputs.forEach(input => input.parentElement.classList.remove("focus"));
 

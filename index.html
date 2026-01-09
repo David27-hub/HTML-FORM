@@ -3,47 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task List / Contact Form Lab</title>
+  <title>Task List Lab</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <section class="container">
-    <div class="form">
+    <div class="task-form">
+      <form id="create-task-form">
+        <h3>Add a Task</h3>
+        <div class="input-container">
+          <input 
+            type="text" 
+            name="new-task-description" 
+            id="new-task-description" 
+            class="input" 
+            placeholder="Enter a task"
+            required
+          >
+          <label for="new-task-description">Task</label>
+        </div>
+        <input type="submit" value="Add Task">
+      </form>
 
-      <!-- Left side - Info -->
-      <div class="contact-info">
-        <h3>Let's get in touch</h3>
-        <p>We're open to any suggestions or just to have a chat.</p>
-      </div>
+      <ul id="task"></ul>
+    </div>
+  </section>
 
-      <!-- Right side - Form -->
-      <div class="contact-form">
-        <form id="create-task-form">
-          <h3 class="title">Contact Us</h3>
-
-          <div class="input-container">
-            <input type="text" name="new-task-description" id="name" class="input" required>
-            <label for="name">Username</label>
-            <span>Username</span>
-          </div>
-
-          <div class="input-container">
-            <input type="email" name="email" id="email" class="input" required>
-            <label for="email">Email</label>
-            <span>Email</span>
-          </div>
-
-          <div class="input-container">
-            <input type="tel" name="phone" id="phone" class="input">
-            <label for="phone">Phone</label>
-            <span>Phone</span>
-          </div>
-
-          <div class="input-container text-area">
-            <textarea name="message" id="message" class="input" required></textarea>
-            <label for="message">Message</label>
-            <span>Message</span>
-          </div>
-
-          <input ty
-
+  <script src="index.js"></script>
+</body>
+</html>
